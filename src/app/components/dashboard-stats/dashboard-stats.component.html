@@ -1,0 +1,16 @@
+<div class="grid-container">
+    <div class="row">
+        <div *ngFor="let tile of tiles" class="col-3 card">
+            <div class="chart">
+            </div>
+            <div class="description">
+                <div class="title">
+                    {{tile.title}}
+                </div>
+                <div class="value">
+                    {{tile.value}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

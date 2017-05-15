@@ -21,11 +21,14 @@
     <!-- TODO: figure out if the <nav> should go inside of a <header> element. -->
     <nav class="nav-navbar">
     <a (click)="sidenav.toggle()" md-button class="nav-button" routerLink="/" aria-label="Angular Material">
+    <md-icon class="icon">menu</md-icon>
+    </a>
+    <a md-button class="nav-button" routerLink="/" aria-label="Angular Material">
         <img class="nav-angular-logo"
             src="https://material.angular.io/assets/img/homepage/angular-white-transparent.svg"
             alt="Angular">
         <span>Angular Webpack</span>
-    </a>
+    </a>    
     <a md-button class="nav-button" routerLink="components">Components</a>
     <a md-button class="nav-button" routerLink="guides">Guides</a>
     <a md-button class="nav-button" href="" aria-label="GitHub Repository">

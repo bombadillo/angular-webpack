@@ -8,12 +8,16 @@ import { AppComponent } from './app.component';
 import { NavBarComponent } from './components/navbar/navbar.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './components/home/home.component';
+import { DashboardStatsComponent } from './components/dashboard-stats/dashboard-stats.component';
+import { ThingsToDoComponent } from './components/things-to-do/things-to-do.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
-    HomeComponent
+    HomeComponent,
+    DashboardStatsComponent,
+    ThingsToDoComponent
   ],
   imports: [
     BrowserModule,

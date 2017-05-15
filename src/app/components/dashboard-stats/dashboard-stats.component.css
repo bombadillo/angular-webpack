@@ -1,0 +1,11 @@
+.description {
+    display: inline-block;
+    padding: 4px 0 0 20px;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.description .value {
+    padding-top: 8px;
+    font-size: 24px;
+}

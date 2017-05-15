@@ -1,0 +1,20 @@
+<div class="grid-container">
+    <div class="row">
+        <div class="col-4 card list">
+            <md-list>
+                <h3 md-subheader>Things to do</h3>
+                <md-list-item *ngFor="let thing of things" class="list-item">
+                    <md-icon md-list-icon>check</md-icon>                    
+                    <div class="row">
+                        <div class="col-6">
+                            <h4 md-line>{{thing.name}}</h4>
+                        </div>
+                        <div class="col-6 right">
+                            <p md-line> {{thing.dueDate | date}} </p>
+                        </div>
+                    </div>                    
+                </md-list-item>
+            </md-list>
+        </div>
+    </div>
+</div>
