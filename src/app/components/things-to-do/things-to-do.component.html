@@ -3,14 +3,16 @@
         <div class="col-4 card list">
             <md-list>
                 <h3 md-subheader>Things to do</h3>
-                <md-list-item *ngFor="let thing of things" class="list-item">
-                    <md-icon md-list-icon>check</md-icon>                    
+                <md-list-item *ngFor="let thing of things" class="list-item">                    
                     <div class="row">
-                        <div class="col-6">
-                            <h4 md-line>{{thing.name}}</h4>
+                        <div class="col-1">
+                            <md-icon md-list-icon class="icon">check</md-icon>                    
+                        </div>
+                        <div class="col-5">
+                            {{thing.name}}
                         </div>
                         <div class="col-6 right">
-                            <p md-line> {{thing.dueDate | date}} </p>
+                            {{thing.dueDate | date}}
                         </div>
                     </div>                    
                 </md-list-item>

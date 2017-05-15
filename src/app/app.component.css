@@ -76,7 +76,7 @@
 
 .nav-item:hover {
   cursor: pointer;
-  background-color: rgba(64, 92, 155, 0.7);
+  background-color: rgba(64, 92, 155, 0.4);
 }
 
 .nav-item:focus {

@@ -5,3 +5,7 @@
 .list .list-item {
     color: #fff;
 }
+
+.list .list-item .icon {
+    padding: 0px;
+}
