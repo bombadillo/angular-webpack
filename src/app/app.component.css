@@ -19,8 +19,15 @@
 .sidenav {
   background-color: #2D3737;
   color: #fff;
+  min-width: 200px;
+  overflow-x: hidden;
 }
 
+.nav-title {
+  opacity: 0.5;
+  user-select: none;
+  cursor: pointer;
+}
 
 .nav-navbar {
   display: flex;
@@ -47,4 +54,31 @@
 
 .nav-navbar{
   color: #fff;
+}
+
+.sidenav .title {
+  padding: 0px 0px 0px 10px;
+}
+
+.sidenav .icon {
+  font-size: 20px;
+  padding: 5px 10px 0px 0px;
+}
+
+.toolbar {
+  padding: 0px;
+  background-color: transparent;
+}
+
+.nav-item.active {
+  background-color: rgba(64, 92, 155, 0.7);
+}
+
+.nav-item:hover {
+  cursor: pointer;
+  background-color: rgba(64, 92, 155, 0.7);
+}
+
+.nav-item:focus {
+  outline: none;
 }

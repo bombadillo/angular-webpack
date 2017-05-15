@@ -1,19 +1,35 @@
 <md-sidenav-container class="container">
   <md-sidenav #sidenav class="sidenav" mode="side">
-    <md-toolbar color="primary">
-    <span>Toolbar header</span>
+    <md-toolbar color="primary" class="toolbar">
+        <span class="center nav-title" (click)="sidenav.toggle()">Navigation</span>
 
-    <md-toolbar-row>
-        <span>Second Line</span>
-        <span class="spacer"></span>
-        <md-icon class="icon">verified_user</md-icon>
-    </md-toolbar-row>
+        <md-toolbar-row class="row nav-item" routerLink="/dashboard" [routerLinkActive]="['active']">    
+            <div class="col-6 title">
+                <span>Dashboard</span>
+            </div>
+            <div class="col-6 right">
+                <md-icon class="icon">whatshot</md-icon>    
+            </div>            
+        </md-toolbar-row>
 
-    <md-toolbar-row>
-        <span>Third Line</span>
-        <span class="spacer"></span>
-        <md-icon class="icon">delete</md-icon>
-    </md-toolbar-row>
+        <md-toolbar-row class="row nav-item" routerLink="/events" [routerLinkActive]="['active']">    
+            <div class="col-6 title">
+                <span>Events</span>
+            </div>
+            <div class="col-6 right">
+                <md-icon class="icon">schedule</md-icon>    
+            </div>            
+        </md-toolbar-row>
+
+        <md-toolbar-row class="row nav-item">    
+            <div class="col-6 title">
+                <span>Products</span>
+            </div>
+            <div class="col-6 right">
+                <md-icon class="icon">shopping cart</md-icon>    
+            </div>            
+        </md-toolbar-row>
+
     </md-toolbar>
   </md-sidenav>
 
@@ -28,9 +44,7 @@
             src="https://material.angular.io/assets/img/homepage/angular-white-transparent.svg"
             alt="Angular">
         <span>Angular Webpack</span>
-    </a>    
-    <a md-button class="nav-button" routerLink="components">Components</a>
-    <a md-button class="nav-button" routerLink="guides">Guides</a>
+    </a>        
     <a md-button class="nav-button" href="" aria-label="GitHub Repository">
         <img class="nav-github-logo"
             src="https://material.angular.io/assets/img/homepage/github-circle-white-transparent.svg"

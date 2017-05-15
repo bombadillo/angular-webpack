@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './components/home/home.component';
 import { DashboardStatsComponent } from './components/dashboard-stats/dashboard-stats.component';
 import { ThingsToDoComponent } from './components/things-to-do/things-to-do.component';
+import { EventComponent } from './components/events/events.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ThingsToDoComponent } from './components/things-to-do/things-to-do.comp
     NavBarComponent,
     HomeComponent,
     DashboardStatsComponent,
-    ThingsToDoComponent
+    ThingsToDoComponent,
+    EventComponent
   ],
   imports: [
     BrowserModule,
